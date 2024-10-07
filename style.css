@@ -1,0 +1,81 @@
+/*Homepage*/
+#bodyhome 
+	{background-image: url(bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;}
+#centralparagraph
+	{position: absolute;
+	top: 46%; left: 54%;
+	transform: translate(-50%, -50%);
+	color: #9e7bde;
+	font-size: 3em;
+	font-family: "Edu NSW ACT Foundation", cursive;
+	font-weight: 450; }
+#container
+	{height: 100%; width: 180px; top:0; left:0; position: fixed;}
+.navigation
+	{background-color: #0000003d; height:33.3%; float: left; width: 180px; display: flex;
+	justify-content: center; align-items: center;  flex-direction: column; transition: background-color 0.6s ease}
+.navigation:hover
+	{background-color: #4b464f91; }
+.navtext
+	{font-size: 25px; color: #F0CCEB; text-decoration: none;}
+.navtext1
+	{visibility: hidden; opacity: 0; ; color: #6b3894b3; margin: 10px 10px; text-align: center;
+	transition: visibility 0s, opacity 0.5s ease;}
+.navigation:hover .navtext1 
+	{ visibility: visible; opacity: 1;}
+#question{position: absolute; bottom: 4vh; left: 94vw; border-radius: 50%; overflow: hidden;transition: box-shadow 0.6s ease}
+#question:hover{box-shadow: 10px 0 25px #6d408af0,-10px 0 25px #6d408af0, 
+    		 0 10px 25px #6d408af0, 0 -10px 25px #6d408af0;}
+#questionicon{width: 4vw; aspect-ratio: 1; opacity: 0.9;transition: transform 0.3s ease;}
+#questionicon:hover{ transform: scale(1.18); transform-origin: center center;}
+/*Facts*/
+.fact11{text-align: center; width: 50%;}
+.body{background-color: #f4e6ff;}
+.hr{border-top: 6px solid #E0B4CB; position: relative; top: 20px;}
+.facttext{font-size: 28px; color: #6e6c70 ; padding-left: 80px; padding-right: 80px;
+		font-family: "Quicksand", sans-serif;}
+#facttext1{margin-top: 100px}
+#text111{margin-top: -15px}
+#facttext2{margin-top: 70px}
+#container1{display: flex; flex-direction: column;}
+.title{font-size: 50px;font-family:Trebuchet MS ;color: #9e7bde; margin: 14px auto 0; text-align: center;}
+#img1{ width: 27% }
+.icon1{width: 2.8vw; aspect-ratio: 1/1; transition: transform 0.5s ease, box-shadow 0.5s ease; }
+.homeicon{position: fixed; top: 20vh; right: 3px;}
+.Speciesicon{position: fixed; top: 36vh; right: 3px;}
+.icon1:hover{box-shadow: 10px 0 20px violet,-10px 0 20px violet, 
+    		 0 10px 20px violet, 0 -10px 20px violet; transform: scale(1.16); transform-origin: center center;}
+.factsicon{position: fixed; top: 28vh; right: 3px;}
+.threatsicon{position: fixed; top: 44vh; right: 3px;}
+#table1{margin: 0 auto; font-size: 28px; color: #6e6c70; border-collapse: collapse;}
+#table1 th,td{border: 3px solid #8a6ba8fa; padding: 10px}
+/*species*/
+.speciestext{font-family: "Quicksand", sans-serif; font-size: 28px; color: #6e6c70; 
+			padding-left: 80px; padding-right: 80px; text-align: center; margin-top: 35px;}
+.container2{display: flex; justify-content: space-around;  position: relative;}
+.animal{text-align: center; width: 30%; overflow: hidden}
+.animal img{max-width: 100%; height: auto;}
+.text-block {
+  position: relative;
+  margin-top: -44px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white;
+  padding: 10px 15vw;width: 100%; }
+ .animaltext{font-family: "Quicksand", sans-serif; font-size: 20px; color: #6e6c70}
+#contaoner2a{margin-top: 35px}
+#iframe{margin-top: -550px}
+/*questionnaire*/
+.container10{display: flex; 
+  flex-direction: row; 
+  justify-content: space-around;}
+.form{text-align: center;  font-family: "Quicksand", system-ui; font-size: 26px; margin-top: 50px}
+.question1{margin: 40px}
+.h2{font-family: "Quicksand", sans-serif; color:#cda1ff}
+.h2container{margin-top: 43px;  background-color: rgba(0, 0, 0, 0.5); width: 19.3vw; margin-left: 20px; padding-left: 10px}
+
+

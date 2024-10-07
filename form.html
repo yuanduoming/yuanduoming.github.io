@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questionnaire</title>
+	<link rel="stylesheet"  type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+	<div >
+	<nobr>
+		<i>
+			<p class="title">
+				Questionnaire
+			</p>
+		</i>
+	</nobr>
+	<div><hr class="hr"></div>
+	</div>
+	<form class="form">
+		<div class="question1">
+			<label for="favourite" >what is your favourite part of this website:</label>
+			<input type="text" name="favourite">
+		</div>
+		<div class="question1">
+			<label for='rate'>How would you rate this website:</label>
+        	<input type='range' name='rate' min='0' max='10' step='1'>
+        </div>
+		<div class="question1">
+			<label for='improve'>which part needs to be improved:</label>
+	        <input type='checkbox' name='improve' value='Homepage'>
+	        <label for='improve'>Homepage</label>
+	        <input type='checkbox' name='improve' value='Facts'>
+	        <label for='improve'>Facts</label>
+	        <input type='checkbox' name='improve' value='Species'>
+	        <label for='improve'>Species</label>
+	        <input type='checkbox' name='improve' value='Threats'>
+	        <label for='improve'>Threats</label>
+		</div>
+		<div class="question1">
+			<label for=email>Email:</label>
+			 <input type='email' name='email'>
+		</div>
+		<input type='submit'>
+	</form>
+	<a class="homeicon" href="index.html"><img class="icon1" src="homepage-icon.jpg"></a> 
+	 <a class="factsicon" href="Facts.html"><img class="icon1" src="fact-icon.jpg"></a> 
+	 <a class="Speciesicon" href="Species.html"><img class="icon1" src="polar-bear-icon.jpg"></a>
+	 <a class="threatsicon" href="Threats.html"><img class="icon1" src="threat-icon.png"></a>
+
+</body>
+</html>
