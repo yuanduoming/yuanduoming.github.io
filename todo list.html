@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>todo list</title>
+  <link rel="stylesheet" type="text/css" href="style2.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r125/three.min.js"></script>
+</head>
+<body>
+  <div class="et-hero-tabs-container">
+      <a class="et-hero-tab" href="home.html">HOME</a>
+      <a class="et-hero-tab" href="todo list.html">TO-DO LIST</a>
+      <a class="et-hero-tab" href="calendar.html">CALENDAR</a>
+      <a class="et-hero-tab" href="timer.html">TIMER</a>
+      <span class="et-hero-tab-slider"></span>
+    </div>
+  <main id="todolist">
+  <h1>
+    Todo List
+    <span>Get things done</span>
+  </h1>
+
+  <template v-if="todo.length">
+    <transition-group name="todolist" tag="ul">
+      <li v-for="item in todoByStatus" v-bind:class="item.done ? 'done' : ''" v-bind:key="item.id">
+        <span class="label">{{item.label}}</span>
+        <div class="actions">
+          <button class="btn-picto" type="button" v-on:click="markAsDoneOrUndone(item)" v-bind:aria-label="item.done ? 'Undone' : 'Done'" v-bind:title="item.done ? 'Undone' : 'Done'">
+            <i aria-hidden="true" class="material-icons">{{ item.done ? 'check_box' : 'check_box_outline_blank' }}</i>
+          </button>
+          <button class="btn-picto" type="button" v-on:click="deleteItemFromList(item)" aria-label="Delete" title="Delete">
+            <i aria-hidden="true" class="material-icons">delete</i>
+          </button>
+        </div>
+      </li>
+    </transition-group>
+    <togglebutton 
+                  label="Move done items at the end?"
+                  name="todosort"
+                  v-on:clicked="clickontoogle" />
+  </template>
+  <p v-else class="emptylist">Your todo list is empty.</p>
+
+  <form name="newform" v-on:submit.prevent="addItem">
+    <label for="newitem">Add to the todo list</label>
+    <input type="text" name="newitem" id="newitem" v-model="newitem">
+    <button type="submit">Add item</button>
+  </form>
+</main>
+<script src="script.js"></script>
+<script src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>clock</title>
+	<link rel="stylesheet" type="text/css" href="timerstyle.css">
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+	<script src='https://use.fontawesome.com/releases/v5.0.6/js/all.js'></script>
+<body>
+	 <div class="et-hero-tabs-container">
+      <a class="et-hero-tab" href="home.html">HOME</a>
+      <a class="et-hero-tab" href="todo list.html">TO-DO LIST</a>
+      <a class="et-hero-tab" href="calendar.html">CALENDAR</a>
+      <a class="et-hero-tab" href="timer.html">TIMER</a>
+     
+      <span class="et-hero-tab-slider"></span>
+    </div>
+	<div id="pomodoro">
+  <div id="clock">
+    <div id="timer">
+      <div id="title">Ready?</div>
+      <div id="countdown">
+        <span id="minutes">30</span>
+        <span id="seconds">00</span>
+      </div>
+      <div id="controls" class="reset">
+        <div id="start"><i class="fas fa-play"></i> Start</div>
+        <div id="pause"><i class="fas fa-pause"></i> Pause</div>
+        <div id="reset"><i class="fas fa-sync-alt"></i> Reset</div>
+      </div>
+    </div>
+  </div>
+  <div id="options">
+    <div id="session">
+      <i id="incrSession" class="fas fa-angle-double-up"></i>
+      <span class="option-title">Session</span>
+      <input id="sessionInput" type="number" value="30" max="60" min="5">
+      <i id="decrSession" class="fas fa-angle-double-down"></i>
+    </div>
+    <div id="break">
+      <i id="incrBreak" class="fas fa-angle-double-up"></i>
+      <span class="option-title">Break</span>
+      <input id="breakInput" type="number" value="5" max="10" min="1">
+      <i id="decrBreak" class="fas fa-angle-double-down"></i>
+    </div>
+  </div>
+</div>
+<script src="timerscript.js"></script>
+</body>
+</html>
